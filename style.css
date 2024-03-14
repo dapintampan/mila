@@ -1,0 +1,73 @@
+body {
+    /* Animasi untuk latar belakang berkelap-kelip */
+    animation: twinkling 1s infinite;
+    background-color: #ffe6ff; /* Warna latar belakang */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Jenis huruf */
+}
+
+@keyframes twinkling {
+    0% { background-color: #FF5733; } /* Warna latar belakang awal */
+    25% { background-color: #DFFF00; } /* Warna latar belakang awal */
+    50% { background-color: #6495ED; } /* Warna latar belakang tengah */
+    100% { background-color: #FFFFFF; } /* Warna latar belakang akhir */
+}
+
+h1 {
+    font-size: 40px; /* Ukuran font */
+    color: #ff0000; /* Warna teks */
+    text-align: center; /* Posisi teks */
+}
+
+h2 {
+    font-size: 30px; /* Ukuran font */
+    color: #ff6600; /* Warna teks */
+    text-align: center; /* Posisi teks */
+}
+
+h3 {
+    font-size: 24px; /* Ukuran font */
+    color: #0066ff; /* Warna teks */
+    text-align: center; /* Posisi teks */
+}
+
+marquee {
+    border: 2px solid #00cc00; /* Warna border */
+    padding: 10px; /* Ruang di dalam border */
+    background-color: #ffff99; /* Warna latar belakang */
+    width: 100%; /* Lebar */
+    text-align: center; /* Posisi teks */
+}
+/* CSS Untuk Gambar */
+.animated {
+    animation: squish 2s infinite; /* Animasi squishing */
+}
+
+/* Keyframes untuk Animasi Squishing */
+@keyframes squish {
+    0%, 100% { transform: scaleY(1); } /* Posisi awal dan akhir (tidak bergerak) */
+    50% { transform: scaleY(0.8); } /* Tengah - memadat */
+}
+
+
+/* CSS Untuk Gambar */
+img {
+    display: block; /* Menjadikan gambar sebagai blok */
+    margin: 0 auto; /* Pusatkan gambar */
+    border-radius: 50%; /* Bentuk bulat */
+    border: 5px solid #ff00ff; /* Warna border */
+    box-shadow: 0 0 20px #ff00ff; /* Efek bayangan */
+    max-width: 50%; /* Lebar maksimum */
+    animation: bounce-rotate-color 2s infinite; /* Animasi bouncing, rotasi, dan perubahan warna */
+}
+
+/* Keyframes untuk Animasi Bouncing, Rotasi, dan Perubahan Warna */
+@keyframes bounce-rotate-color {
+    0%, 100% { 
+        transform: translateY(0) rotate(0) scale(1); /* Posisi awal dan akhir (tidak bergerak) */
+        filter: hue-rotate(0); /* Perubahan warna */
+    }
+    50% { 
+        transform: translateY(-20px) rotate(360deg) scale(1.2); /* Tengah - bergerak ke atas, putar, dan meregang */
+        filter: hue-rotate(180deg); /* Perubahan warna */
+    }
+}
